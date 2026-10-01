@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call for Papers</title>
-    <link rel="stylesheet" href="style_sheet.css">
-    <link rel="icon" type="image/x-icon" href="img/tree.ico">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/tree.ico">
 </head>
 <body>
 
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="" class="header-image">
+    <img src="/img/head_short.png" alt="" class="header-image">
   </div>
 
   <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
     <a href="/" class="logo">
-      <img src="img/ecoth_simple.png" alt="ECOTH Home">
+      <img src="/img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
@@ -29,44 +29,48 @@
       <a href="/">Home</a>
       <a href="/history.html">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
+      <span class="menu-heading">ECOTH 2025</span>
+      <a href="/ECOTH2025/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2025/papers.html" class="sub">Call for Papers</a>
+      <a href="/ECOTH2025/program.html" class="sub">Program</a>
+      <a href="/ECOTH2025/photos.html" class="sub">Photos</a>
+      <span class="menu-heading">ECOTH 2026</span>
+      <a href="/ECOTH2026/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2026/papers.html" class="sub active" aria-current="page">Call for Papers</a>
+      <a href="/ECOTH2026/program.html" class="sub">Program</a>
+      <a href="/ECOTH2026/photos.html" class="sub">Photos</a>
     </div>
 
-    <!-- Desktop text buttons -->
+    <!-- Desktop buttons; each year opens a dropdown of its pages -->
     <div class="nav-buttons">
       <a href="/">Home</a>
       <a href="/history.html">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle" aria-haspopup="true">2025 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2025/index.html">Overview</a>
+          <a href="/ECOTH2025/papers.html">Call for Papers</a>
+          <a href="/ECOTH2025/program.html">Program</a>
+          <a href="/ECOTH2025/photos.html">Photos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle active" aria-haspopup="true">2026 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2026/index.html">Overview</a>
+          <a href="/ECOTH2026/papers.html" class="active" aria-current="page">Call for Papers</a>
+          <a href="/ECOTH2026/program.html">Program</a>
+          <a href="/ECOTH2026/photos.html">Photos</a>
+        </div>
+      </div>
     </div>
   </nav>
 
   <p class="header-text">Environmental Conference of the Humanities</p>
 </header>
 
-<!-- Conference-year sub-menu -->
-<nav class="subnav" aria-label="ECOTH 2026">
-  <span class="subnav-label">ECOTH 2026:</span>
-  <a href="index.html">2026</a>
-  <a href="papers.html" class="active" aria-current="page">Call for Papers</a>
-  <a href="program.html">Program</a>
-  <a href="photos.html">Photos</a>
-</nav>
-
-    <!-- Main Container for Left and Right Columns -->
-    <div class="container">
-        <!-- Left Column -->
-        <div class="left">
-            <img src="img/ecoth_simple.png" alt="ECOTH Logo">
-            <p></p>
-        </div>
-
-        <!-- Right Column -->
-        <div class="right">
-            <!-- Project Information Section -->
-            <div class="info">
+<main class="single">
                 <h1>Call for Papers</h1>
 <p>Join us November 6, 2026, at the University of Lethbridge for the second annual Environmental Conference of the Humanities (ECOTH). ECOTH embraces the all-encompassing study of the environment in the context of the humanities. This year’s ECOTH celebrates the coulees surrounding the University of Lethbridge and their connotations of flow, connections, and corridors with our theme of Coulees and Corridors. The word coulee, from the French verb couler, means “to flow,” and these valleys invite us and our fellow creatures to flow with and connect to the land. 
 We encourage proposals for papers, panels, creative presentations, and posters that expand our ideas about Coulees and Corridors in relation to the environmental humanities. Topics for exploration include but are not limited to: </p>
@@ -104,7 +108,6 @@ We encourage proposals for papers, panels, creative presentations, and posters t
 <p>Please submit a proposal (maximum 300 words) and a biographical statement (maximum 75 words) to ecoth.uleth@gmail.com no later than 23:59(MST) on October 13, 2026. For panels (up to 4 presenters), applicants are asked to share the title of the proposed panel in addition to the individual paper titles and presenter bios. For multimedia/creative submissions, please include a description or sample of work. For help on writing a proposal and biographical statement, feel free to contect us at ecoth.uleth@gmail.com.</p>
 <p>Authors may submit multiple abstracts (e.g. one single author submission and one co-authored submission) but may only present once.
 </p>
-        </div>
-    </div>    
+</main>
 </body>
 </html>

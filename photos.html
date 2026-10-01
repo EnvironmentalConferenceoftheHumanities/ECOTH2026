@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Environmental Conference of the Humanities</title>
-    <link rel="stylesheet" href="style_sheet.css">
-    <link rel="icon" type="image/x-icon" href="img/tree.ico">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/tree.ico">
 
 <style>
   body {
@@ -69,13 +69,13 @@
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="" class="header-image">
+    <img src="/img/head_short.png" alt="" class="header-image">
   </div>
 
   <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
     <a href="/" class="logo">
-      <img src="img/ecoth_simple.png" alt="ECOTH Home">
+      <img src="/img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
@@ -86,31 +86,46 @@
       <a href="/">Home</a>
       <a href="/history.html">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
+      <span class="menu-heading">ECOTH 2025</span>
+      <a href="/ECOTH2025/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2025/papers.html" class="sub">Call for Papers</a>
+      <a href="/ECOTH2025/program.html" class="sub">Program</a>
+      <a href="/ECOTH2025/photos.html" class="sub">Photos</a>
+      <span class="menu-heading">ECOTH 2026</span>
+      <a href="/ECOTH2026/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2026/papers.html" class="sub">Call for Papers</a>
+      <a href="/ECOTH2026/program.html" class="sub">Program</a>
+      <a href="/ECOTH2026/photos.html" class="sub active" aria-current="page">Photos</a>
     </div>
 
-    <!-- Desktop text buttons -->
+    <!-- Desktop buttons; each year opens a dropdown of its pages -->
     <div class="nav-buttons">
       <a href="/">Home</a>
       <a href="/history.html">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle" aria-haspopup="true">2025 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2025/index.html">Overview</a>
+          <a href="/ECOTH2025/papers.html">Call for Papers</a>
+          <a href="/ECOTH2025/program.html">Program</a>
+          <a href="/ECOTH2025/photos.html">Photos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle active" aria-haspopup="true">2026 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2026/index.html">Overview</a>
+          <a href="/ECOTH2026/papers.html">Call for Papers</a>
+          <a href="/ECOTH2026/program.html">Program</a>
+          <a href="/ECOTH2026/photos.html" class="active" aria-current="page">Photos</a>
+        </div>
+      </div>
     </div>
   </nav>
 
   <p class="header-text">Environmental Conference of the Humanities</p>
 </header>
-
-<!-- Conference-year sub-menu -->
-<nav class="subnav" aria-label="ECOTH 2026">
-  <span class="subnav-label">ECOTH 2026:</span>
-  <a href="index.html">2026</a>
-  <a href="papers.html">Call for Papers</a>
-  <a href="program.html">Program</a>
-  <a href="photos.html" class="active" aria-current="page">Photos</a>
-</nav>
 
 <main class="single coming-soon">
   <h1>Photos</h1>
