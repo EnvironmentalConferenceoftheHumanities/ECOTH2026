@@ -12,39 +12,48 @@
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="Header Image" class="header-image">
+    <img src="img/head_short.png" alt="" class="header-image">
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
     <a href="/" class="logo">
-      <img src="img/ecoth_simple.png" alt="Logo">
+      <img src="img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger-icon" aria-label="Toggle navigation" aria-controls="mobile-menu">☰</label>
 
-    <!-- Use a DIV (not a nested <nav>) to avoid UA styles on desktop -->
     <div class="hamburger-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="/">ECOTH Hub</a>
-      <a href="index.html">Home</a>
-      <a href="papers.html">Papers</a>
-      <a href="program.html">Program</a>
-      <a href="photos.html">Photos</a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
     </div>
 
-    <!-- Desktop image buttons -->
+    <!-- Desktop text buttons -->
     <div class="nav-buttons">
-      <a href="index.html"><img src="img/home.png" alt="Home Button"></a>
-      <a href="papers.html"><img src="img/papers.png" alt="Papers Button"></a>
-      <a href="program.html"><img src="img/program.png" alt="Program Button"></a>
-      <a href="photos.html"><img src="img/photos.png" alt="Photos Button"></a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
     </div>
   </nav>
 
-<p class="header-text">Environmental Conference of the Humanities</p>
+  <p class="header-text">Environmental Conference of the Humanities</p>
 </header>
+
+<!-- Conference-year sub-menu -->
+<nav class="subnav" aria-label="ECOTH 2026">
+  <span class="subnav-label">ECOTH 2026:</span>
+  <a href="index.html">2026</a>
+  <a href="papers.html" class="active" aria-current="page">Call for Papers</a>
+  <a href="program.html">Program</a>
+  <a href="photos.html">Photos</a>
+</nav>
 
     <!-- Main Container for Left and Right Columns -->
     <div class="container">

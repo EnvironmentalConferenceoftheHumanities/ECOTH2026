@@ -69,71 +69,54 @@
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="Header Image" class="header-image">
+    <img src="img/head_short.png" alt="" class="header-image">
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
     <a href="/" class="logo">
-      <img src="img/ecoth_simple.png" alt="Logo">
+      <img src="img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger-icon" aria-label="Toggle navigation" aria-controls="mobile-menu">☰</label>
 
-    <!-- Use a DIV (not a nested <nav>) to avoid UA styles on desktop -->
     <div class="hamburger-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="/">ECOTH Hub</a>
-      <a href="index.html">Home</a>
-      <a href="papers.html">Papers</a>
-      <a href="program.html">Program</a>
-      <a href="photos.html">Photos</a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
     </div>
 
-    <!-- Desktop image buttons -->
+    <!-- Desktop text buttons -->
     <div class="nav-buttons">
-      <a href="index.html"><img src="img/home.png" alt="Home Button"></a>
-      <a href="papers.html"><img src="img/papers.png" alt="Papers Button"></a>
-      <a href="program.html"><img src="img/program.png" alt="Program Button"></a>
-      <a href="photos.html"><img src="img/photos.png" alt="Photos Button"></a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/" class="active" aria-current="page">2026</a>
     </div>
   </nav>
 
- <p class="header-text">Environmental Conference of the Humanities</p>
+  <p class="header-text">Environmental Conference of the Humanities</p>
 </header>
 
-  <h1>Photo Gallery</h1>
+<!-- Conference-year sub-menu -->
+<nav class="subnav" aria-label="ECOTH 2026">
+  <span class="subnav-label">ECOTH 2026:</span>
+  <a href="index.html">2026</a>
+  <a href="papers.html">Call for Papers</a>
+  <a href="program.html">Program</a>
+  <a href="photos.html" class="active" aria-current="page">Photos</a>
+</nav>
 
-
-  <div class="gallery">
-    <div class="gallery-item"><img src="pics/1.jpg" alt="Photo 1"></div>
-    <div class="gallery-item"><img src="pics/2.jpg" alt="Photo 2"></div>
-    <div class="gallery-item"><img src="pics/3.jpg" alt="Photo 3"></div>
-    <div class="gallery-item"><img src="pics/4.jpg" alt="Photo 4"></div>
-    <div class="gallery-item"><img src="pics/5.jpg" alt="Photo 5"></div>
-    <div class="gallery-item"><img src="pics/6.jpg" alt="Photo 6"></div>
-    <div class="gallery-item"><img src="pics/7.jpg" alt="Photo 7"></div>
-    <div class="gallery-item"><img src="pics/8.jpg" alt="Photo 8"></div>
-    <div class="gallery-item"><img src="pics/9.jpg" alt="Photo 9"></div>
-    <div class="gallery-item"><img src="pics/10.jpg" alt="Photo 10"></div>
-    <div class="gallery-item"><img src="pics/11.jpg" alt="Photo 11"></div>
-    <div class="gallery-item"><img src="pics/12.jpg" alt="Photo 12"></div>
-    <div class="gallery-item"><img src="pics/13.jpg" alt="Photo 13"></div>
-    <div class="gallery-item"><img src="pics/14.jpg" alt="Photo 14"></div>
-    <div class="gallery-item"><img src="pics/15.jpg" alt="Photo 15"></div>
-    <div class="gallery-item"><img src="pics/16.jpg" alt="Photo 16"></div>
-    <div class="gallery-item"><img src="pics/17.jpg" alt="Photo 17"></div>
-    <div class="gallery-item"><img src="pics/18.jpg" alt="Photo 18"></div>
-    <div class="gallery-item"><img src="pics/19.jpg" alt="Photo 19"></div>
-    <div class="gallery-item"><img src="pics/20.jpg" alt="Photo 20"></div>
-    <div class="gallery-item"><img src="pics/21.jpg" alt="Photo 21"></div>
-    <div class="gallery-item"><img src="pics/22.jpg" alt="Photo 22"></div>
-    <div class="gallery-item"><img src="pics/23.jpg" alt="Photo 23"></div>
-    <div class="gallery-item"><img src="pics/24.jpg" alt="Photo 24"></div>
-    <div class="gallery-item"><img src="pics/25.jpg" alt="Photo 25"></div>
-    <div class="gallery-item"><img src="pics/26.jpg" alt="Photo 26"></div>
-  </div>
+<main class="single coming-soon">
+  <h1>Photos</h1>
+  <p class="coming-soon-tag">Coming soon</p>
+  <p>Photos from ECOTH 2026 will be shared here after the conference on November 6, 2026.</p>
+</main>
 
 </body>
 </html>
